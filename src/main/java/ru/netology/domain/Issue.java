@@ -4,18 +4,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.HashSet;
+import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 
-public class Issues {
+public class Issue {
     private int id;
     private boolean open;
     private String author;
-    private HashSet<String> label;
+    private Set<String> label;
     private String date;
-    private HashSet<String> assignee;
+    private Set<String> assignee;
     private int commentsCount;
 }
